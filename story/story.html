@@ -28,6 +28,23 @@
             zoom: 13,
             mapTypeID: "sattelite"
         });
+        //custom icons
+        const icons: Record<string, {icon: string}> = {
+            campsite: {
+                icon: "https://vandam.nfshost.com/campsiteIcon.png",
+            }
+            portage: {
+                icon: "https://vandam.nfshost.com/portageIcon.png"
+            }
+        }
+        const features = [
+            {
+                position: new google.maps.LatLng(44.722030, -78.194838),type: "campsite",
+            }
+            {
+                position: new google.maps.LatLng(44.728121, -78.197607),type: "portage",
+            }
+        ]
         // polyline
         const CanoePlanCoordinates = [
             { lat: 44.748249, lng: -78.159711 },
@@ -51,13 +68,14 @@
         });
         flightPath.setMap(map);
     }
-    declare global {
+/*    declare global {
         interface Window {
             initMap: () => void;
         }
         }
         window.initMap = initMap;
         export {};
+*/
     </script>
     </head>
     <body>
