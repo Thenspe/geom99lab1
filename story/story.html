@@ -51,6 +51,13 @@
         });
         flightPath.setMap(map);
     }
+    declare global {
+        interface Window {
+            initMap: () => void;
+        }
+        }
+        window.initMap = initMap;
+        export {};
     </script>
     </head>
     <body>
