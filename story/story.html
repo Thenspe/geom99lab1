@@ -23,33 +23,33 @@
     let map;
 
     function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: 44.73400, lng:-78.18150 },
-          zoom: 13,
-          mapTypeID: "sattelite"
-    });
-    // polyline
-    const CanoePlanCoordinates = [
-        { lat: 44.748249, lng: -78.159711 },
-        { lat: 44.748386, lng: -78.160394 },
-        { lat: 44.741931, lng: -78.171058 },
-        { lat: 44.735047, lng: -78.184584 },
-        { lat: 44.734338, lng: -78.189916 },
-        { lat: 44.733871, lng: -78.190836 },
-        { lat: 44.728721, lng: -78.198032 },
-        { lat: 44.727620, lng: -78.197927 },
-        { lat: 44.725251, lng: -78.190914 },
-        { lat: 44.723795, lng: -78.191230 },
-        { lat: 44.722030, lng: -78.194838 }
-    ];
-    const canoePath = new google.maps.Polyline({
-        path: CanoePlanCoordinates,
-        geodesic: true,
-        strokeColor: "#FF0000",
-        strokeOpacity: 1.0,
-        strokeWeight: 2,
-    });
-
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: 44.73400, lng:-78.18150 },
+            zoom: 13,
+            mapTypeID: "sattelite"
+        });
+        // polyline
+        const CanoePlanCoordinates = [
+            { lat: 44.748249, lng: -78.159711 },
+            { lat: 44.748386, lng: -78.160394 },
+            { lat: 44.741931, lng: -78.171058 },
+            { lat: 44.735047, lng: -78.184584 },
+            { lat: 44.734338, lng: -78.189916 },
+            { lat: 44.733871, lng: -78.190836 },
+            { lat: 44.728721, lng: -78.198032 },
+            { lat: 44.727620, lng: -78.197927 },
+            { lat: 44.725251, lng: -78.190914 },
+            { lat: 44.723795, lng: -78.191230 },
+            { lat: 44.722030, lng: -78.194838 }
+        ];
+        const canoePath = new google.maps.Polyline({
+            path: CanoePlanCoordinates,
+            geodesic: true,
+            strokeColor: "#FF0000",
+            strokeOpacity: 1.0,
+            strokeWeight: 2,
+        });
+    }
     </script>
     </head>
     <body>
@@ -57,4 +57,4 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly" async>
         </script>
     </body>
-</html> -->
+</html>
