@@ -38,13 +38,7 @@
             icon: campsite,
         })
         const portageMarker = new google.maps.Marker({
-            position: [
-                {lat: 44.728121, lng: -78.197607},
-                {lat: 44.721915, lng: -78.191280},
-                {lat: 44.719884, lng: -78.195260},
-                //{lat: 44.728110, lng: -78.19317}
-                {lat: 44.723681, lng: -78.188641},
-        ],
+            position: {lat: 44.728121, lng: -78.197607},
             map,
             icon: portage,
         })
@@ -71,13 +65,7 @@
         });
         canoePath.setMap(map);
     }
-/*    declare global {
-        interface Window {
-            initMap: () => void;
-        }
-        }*/
-        window.initMap = initMap;
-        //export {};
+    window.initMap = initMap;
     </script>
     </head>
     <body>
