@@ -1,2 +1,7 @@
 As per resubmission requirements, here are my notes regarding troubleshooting and fixing the javascript mess.
 
+Map type didn't change because apparently I don't know how to spell satellite.
+
+Custom icons didn't work because I used the wrong code example. It was just full-out incorrect.
+
+removed &v=weekly from the script tag. 
