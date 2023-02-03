@@ -21,3 +21,7 @@ I had:
 The polyline, apparently was still setting the map using the variable from the example, instead of my updated canoePath.
 
 removed &v=weekly from the script tag. 
+
+That's the end of what I had attempted prior to the Lab Practical.
+
+I added the directions after, to see if it worked calling the directions url or not.
