@@ -18,4 +18,6 @@ I had:
             { position: new google.maps.LatLng(44.728121, -78.197607),type: "portage",}
         ];
 
+The polyline, apparently was still setting the map using the variable from the example, instead of my updated canoePath.
+
 removed &v=weekly from the script tag. 
