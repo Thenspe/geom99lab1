@@ -23,11 +23,11 @@
     let map;
 
     function initMap() {
-        map = new google.maps.Map(document.getElementById("map"), {
+        map = new google.maps.Map(document.getElementById("map"), [
             center: { lat: 44.73400, lng:-78.18150 },
             zoom: 12,
-            mapTypeID: "satellite"
-        });
+            mapTypeIDs: "satellite",
+        ]);
         /*custom icons
         const icons: Record<string, {icon: string}> = {
             campsite: {
