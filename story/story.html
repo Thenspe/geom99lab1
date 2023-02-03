@@ -26,10 +26,10 @@
         map = new google.maps.Map(document.getElementById("map"), {
             center: { lat: 44.73400, lng:-78.18150 },
             zoom: 12,
-            mapTypeID: 'satellite'
+            mapTypeID: "satellite",
         });
         // custom map markers
-        const campsite = "https://vandam.nfshost.com/campsiteIcon.png";
+        const campsite = "https://vandam.nfshost.com/campsiteIcon2.png";
         const portage = "https://vandam.nfshost.com/portageIcon.png";
 
         const campsiteMarker = new google.maps.Marker({
@@ -43,7 +43,7 @@
             icon: portage,
         })
         // polyline
-        /* const CanoePlanCoordinates = [
+        const CanoePlanCoordinates = [
             { lat: 44.748249, lng: -78.159711 },
             { lat: 44.748386, lng: -78.160394 },
             { lat: 44.741931, lng: -78.171058 },
@@ -54,7 +54,7 @@
             { lat: 44.727620, lng: -78.197927 },
             { lat: 44.725251, lng: -78.190914 },
             { lat: 44.723795, lng: -78.191230 },
-            { lat: 44.722030, lng: -78.194838 }
+            { lat: 44.722030, lng: -78.194838 },
         ];
         const canoePath = new google.maps.Polyline({
             path: CanoePlanCoordinates,
@@ -63,16 +63,15 @@
             strokeOpacity: 1.0,
             strokeWeight: 2,
         });
-        flightPath.setMap(map); */
+        flightPath.setMap(map);
     }
 /*    declare global {
         interface Window {
             initMap: () => void;
         }
-        }
+        }*/
         window.initMap = initMap;
-        export {};
-*/
+        //export {};
     </script>
     </head>
     <body>
