@@ -24,7 +24,7 @@
 
     function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
-            center: { lat: 44.73400, lng:-78.18150 },
+            center: { lat: 44.50809, lng:-78.24171 },
             zoom: 15,
             mapTypeID: "satellite",
         });
@@ -70,7 +70,7 @@
     </head>
     <body>
         <div id="map"></div>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap" async>
+        <script src="https://maps.googleapis.com/maps/api/directions/json?origin=place_id%3ChIJNeSdl-eM1YkR8M1zX6G0hO4&destination=place_id%3ChIJ1a68NguT1EwRKCawKFgaabA&key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap" async>
         </script>
     </body>
 </html>
