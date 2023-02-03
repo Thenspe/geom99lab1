@@ -1,0 +1,2 @@
+As per resubmission requirements, here are my notes regarding troubleshooting and fixing the javascript mess.
+
