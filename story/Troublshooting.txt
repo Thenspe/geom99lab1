@@ -3,5 +3,19 @@ As per resubmission requirements, here are my notes regarding troubleshooting an
 Map type didn't change because apparently I don't know how to spell satellite.
 
 Custom icons didn't work because I used the wrong code example. It was just full-out incorrect.
+I had:
+// custom icons
+        const icons: Record<string, {icon: string}> = {
+            campsite: {
+                icon: "https://vandam.nfshost.com/campsiteIcon.png",
+            }
+            portage: {
+                icon: "https://vandam.nfshost.com/portageIcon.png"
+            }
+        };
+        const features = [
+            { position: new google.maps.LatLng(44.722030, -78.194838),type: "campsite",},
+            { position: new google.maps.LatLng(44.728121, -78.197607),type: "portage",}
+        ];
 
 removed &v=weekly from the script tag. 
