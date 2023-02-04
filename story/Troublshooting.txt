@@ -17,11 +17,15 @@ I had:
             { position: new google.maps.LatLng(44.722030, -78.194838),type: "campsite",},
             { position: new google.maps.LatLng(44.728121, -78.197607),type: "portage",}
         ];
+I don't know how that record/string works, but it would have been great to get this version working because it allowed
+for an easy array for marker locations instead of making a huge pile of variables. I would have used that to show each campsite
+on the lake, and then polyline to the preferred site.
 
-The polyline, apparently was still setting the map using the variable from the example, instead of my updated canoePath.
+The polyline, apparently was still setting the map using the variable from the example, instead of my updated canoePath. Copy+paste update fail.
 
 removed &v=weekly from the script tag. 
 
 That's the end of what I had attempted prior to the Lab Practical.
 
-I added the directions after, to see if it worked calling the directions url or not.
+I added the directions after, to see if it worked calling the directions url or not. It's commented out because it didn't work.
+Can you get use the directions API inside of the storymap api?
